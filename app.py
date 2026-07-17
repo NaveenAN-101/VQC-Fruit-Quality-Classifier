@@ -164,7 +164,6 @@ demo = gr.Interface(
     ),
 )
 
-demo.queue()  # handle concurrent requests gracefully instead of them piling up and timing out
 
 
 if __name__ == "__main__":
