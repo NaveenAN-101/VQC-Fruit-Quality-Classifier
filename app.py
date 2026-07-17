@@ -130,9 +130,9 @@ demo = gr.Interface(
 demo.queue()  # handle concurrent requests gracefully instead of them piling up and timing out
 
 if __name__ == "__main__":
-    # Hugging Face Spaces already provides a permanent public URL, so no tunnel is needed there.
-    # On Kaggle (or running locally without port forwarding), share=True is required to get a
-    # public link. SPACE_ID is an env var Spaces sets automatically, so this switches itself
-    # without you needing to edit this line per-platform.
-    running_on_spaces = os.environ.get("SPACE_ID") is not None
-    demo.launch(share=not running_on_spaces)
+    port = int(os.environ.get("PORT", 7860))
+    demo.launch(
+        server_name="0.0.0.0",
+        server_port=port,
+        share=False,
+    )
