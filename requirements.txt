@@ -1,5 +1,5 @@
-torch
-torchvision
-pennylane
-gradio
-Pillow
+torch==2.10.0
+torchvision==0.25.0
+pennylane==0.45.1
+gradio==5.50.0
+Pillow==12.3.0
