@@ -167,10 +167,9 @@ demo = gr.Interface(
 print("Reached end of file", flush=True)
 
 if __name__ == "__main__":
-    print("13. Launching Gradio...", flush=True)
-
     port = int(os.environ.get("PORT", 7860))
-
+    print(f"12.5. Binding to port {port}", flush=True)    
+    print("13. Launching Gradio...", flush=True)
     demo.launch(
         server_name="0.0.0.0",
         server_port=port,
