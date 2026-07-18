@@ -1,4 +1,6 @@
-torch==2.10.0
-torchvision==0.25.0
-pennylane==0.45.1
-gradio==4.44.0
+torch
+torchvision
+pennylane
+gradio==4.44.1
+huggingface_hub==0.25.2
+Pillow
